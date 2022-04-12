@@ -61,13 +61,8 @@ print('\n==================================================================\n')
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
 
-<<<<<<< HEAD
+
 ghina = cloneDF(mergeRatings)
 ghina = ghina.groupby(['movie_id', 'title'])['rating'].agg(
-=======
-Sehija_Eil = cloneDF(mergeRatings)
-Sehija_Eil = Sehija_Eil.groupby(['movie_id', 'title'])['rating'].agg(
->>>>>>> ff683c418aa5680e595ac0bdd0cdd7d197367898
-    COUNT=np.size, myAVG=lambda x: x.sum() / float(x.count())).sort_values('COUNT', ascending=False)
 print('My info sorted: \n%s' % Sehija_Eil[:15])
 
